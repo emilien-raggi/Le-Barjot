@@ -1,0 +1,78 @@
+.cards{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	flex-grow: 1;
+	justify-content: space-between;
+}
+
+.cards .card{
+	flex-basis: 300px;
+	margin: 10px;
+	flex-grow: 1;
+}
+
+
+
+
+.card{
+	padding: 8px;
+	display: flex;
+	align-items: center;
+	box-shadow: 0px 10px 30px rgba(0,0,0,0.2);
+	border-radius: 6px;
+	
+}
+
+.card img {
+	width: 100px;
+	height: 100px;
+	border-radius: 6px;
+	margin-right: 8px;
+}
+
+.card .btn-green{
+	font-weight: normal;
+	margin-left: 30px;
+}
+
+.card .btn-green:hover{
+	background-color: #329664;
+}
+.card h3{
+	margin: 10px;
+	font-size: 18px;
+}
+
+
+@media (max-width: 1024px) {
+  /* For a screen < 960px, this CSS will be read */
+	.card a {
+    font-size: 18px;
+  	}
+  	.card h3{
+	font-size: 18px;
+	}
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+ .card a {
+    font-size: 16px;
+  }
+  .card h3{
+	font-size: 16px;
+	}
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .card a {
+    font-size: 12px;
+  }
+  .card h3{
+	font-size: 12px;
+	}
+}
+
+#card-contact{
+	margin-left: 30px;
+}
